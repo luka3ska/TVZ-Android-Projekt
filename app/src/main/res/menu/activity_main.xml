@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/share"
+        android:title="@string/nazovi_najboljeg_sina"
+        android:onClick="nazoviSina"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/glazba"
+        android:title="@string/pokreni_pauziraj_glazbu"
+        android:onClick="upravljajGlazbom"
+        app:showAsAction="never" />
+</menu>

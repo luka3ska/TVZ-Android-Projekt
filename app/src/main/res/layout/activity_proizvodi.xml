@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".popisnamirnica.PopisNamirnica">
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="528dp"
+        android:layout_below="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="17dp">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/buttonUnesi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_alignLeft="@id/lista"
+        android:layout_marginLeft="109dp"
+        android:layout_marginTop="11dp"
+        android:onClick="unesi"
+        android:text="@string/unesi_proizvod" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="11dp"
+        android:ems="10">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/unesiProizvod"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:text="@string/unesi_proizvodx" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonUnesi"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="115dp"
+        android:onClick="obrisi"
+        android:text="@string/obri_i_sve_proizvode" />
+
+</RelativeLayout>

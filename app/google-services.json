@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "782398601929",
+    "project_id": "notifikacije-za-mamu",
+    "storage_bucket": "notifikacije-za-mamu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782398601929:android:e4f2422c388eb0c7abab18",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "782398601929-mfqk4frnsvhjj9lj7gn849rmlshieqed.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT5r7ox_IMePXAjikRgICQNWxHU9MXjEQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "782398601929-mfqk4frnsvhjj9lj7gn849rmlshieqed.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782398601929:android:6effa8be21009a71abab18",
+        "android_client_info": {
+          "package_name": "hr.tvz.android.maminaaplikacija"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "782398601929-mfqk4frnsvhjj9lj7gn849rmlshieqed.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT5r7ox_IMePXAjikRgICQNWxHU9MXjEQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "782398601929-mfqk4frnsvhjj9lj7gn849rmlshieqed.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

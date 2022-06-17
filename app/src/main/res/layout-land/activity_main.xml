@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:columnCount="4"
+            app:rowCount="15">
+
+
+            <TextView
+                android:id="@+id/strunaText"
+                style="@style/Tablica"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/struja"
+                android:textAlignment="textEnd"
+                app:layout_column="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_row="0" />
+
+            <EditText
+                android:id="@+id/struja"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                app:layout_column="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/vodaText"
+                app:layout_constraintHorizontal_bias="0.285"
+                app:layout_constraintStart_toEndOf="@+id/strunaText"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_row="0" />
+
+            <EditText
+                android:id="@+id/voda"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                app:layout_column="3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.19"
+                app:layout_constraintStart_toEndOf="@+id/vodaText"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_row="0" />
+
+            <TextView
+                android:id="@+id/vodaText"
+                style="@style/Tablica"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                android:text="@string/voda"
+                android:textAlignment="textEnd"
+                app:layout_column="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_row="0" />
+
+            <TextView
+                android:id="@+id/brojStanara"
+                android:layout_width="102dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/broj_stanara"
+                android:textAlignment="textStart"
+                app:layout_column="1"
+                app:layout_row="1"
+                style="@style/Tablica"/>
+
+            <TextView
+                android:id="@+id/brojDana"
+                style="@style/Tablica"
+                android:layout_width="90dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/broj_dana"
+                android:textAlignment="textStart"
+                app:layout_column="2"
+                app:layout_row="1" />
+
+            <TextView
+                android:id="@+id/ukupnoZaPlatiti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/ukupno_za_platiti"
+                android:textAlignment="textStart"
+                app:layout_column="3"
+                app:layout_row="1"
+                style="@style/Tablica"/>
+
+            <TextView
+                android:id="@+id/badnjevic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/badnjevi"
+                app:layout_column="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_row="2"
+                style="@style/Imena"/>
+
+            <TextView
+                android:id="@+id/ivanovic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/ivanovi"
+                app:layout_column="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/badnjevic"
+                app:layout_row="3"
+                style="@style/Imena"/>
+
+            <TextView
+                android:id="@+id/tosic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/to_i"
+                app:layout_column="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivanovic"
+                app:layout_row="4"
+                style="@style/Imena"/>
+
+            <TextView
+                android:id="@+id/radetic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/radeti"
+                app:layout_column="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tosic"
+                app:layout_row="5"
+                style="@style/Imena"/>
+
+            <TextView
+                android:id="@+id/civitico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/civitico"
+                app:layout_column="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radetic"
+                app:layout_row="6"
+                style="@style/Imena"/>
+
+            <TextView
+                android:id="@+id/zidaric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/zidari"
+                app:layout_column="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/civitico"
+                app:layout_row="7"
+                style="@style/Imena"/>
+
+            <TextView
+                android:id="@+id/crnkovic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/crnkovi"
+                app:layout_column="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/zidaric"
+                app:layout_row="8"
+                style="@style/Imena"/>
+
+            <TextView
+                android:id="@+id/glavas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/glava"
+                app:layout_column="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crnkovic"
+                app:layout_row="9"
+                style="@style/Imena"/>
+
+            <TextView
+                android:id="@+id/dzaferovic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/d_aferovi"
+                app:layout_column="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/glavas"
+                app:layout_row="10"
+                style="@style/Imena"/>
+
+            <TextView
+                android:id="@+id/markovski"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/markovski"
+                app:layout_column="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dzaferovic"
+                app:layout_row="11"
+                style="@style/Imena"/>
+
+            <TextView
+                android:id="@+id/triska"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/triska"
+                app:layout_column="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/markovski"
+                app:layout_row="12"
+                style="@style/Imena"/>
+
+            <EditText
+                android:id="@+id/badnjevicStanari"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_column="1"
+                app:layout_row="2" />
+
+            <EditText
+                android:id="@+id/badnjevicDani"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="textStart"
+                app:layout_column="2"
+                app:layout_row="2" />
+
+            <TextView
+                android:id="@+id/badnjevicUkupno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 kn"
+                app:layout_column="3"
+                app:layout_row="2"
+                style="@style/Rezultat"/>
+
+            <EditText
+                android:id="@+id/ivanovicStanari"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_column="1"
+                app:layout_row="3" />
+
+            <EditText
+                android:id="@+id/ivanovicDani"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                app:layout_column="2"
+                app:layout_row="3" />
+
+            <TextView
+                android:id="@+id/ivanovicUkupno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 kn"
+                app:layout_column="3"
+                app:layout_row="3"
+                style="@style/Rezultat"/>
+
+            <EditText
+                android:id="@+id/tosicStanari"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_column="1"
+                app:layout_row="4" />
+
+            <EditText
+                android:id="@+id/tosicDani"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                app:layout_column="2"
+                app:layout_row="4" />
+
+            <TextView
+                android:id="@+id/tosicUkupno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 kn"
+                app:layout_column="3"
+                app:layout_row="4"
+                style="@style/Rezultat"/>
+
+            <EditText
+                android:id="@+id/radeticStanari"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_column="1"
+                app:layout_row="5" />
+
+            <EditText
+                android:id="@+id/radeticDani"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                app:layout_column="2"
+                app:layout_row="5" />
+
+            <TextView
+                android:id="@+id/radeticUkupno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 kn"
+                app:layout_column="3"
+                app:layout_row="5"
+                style="@style/Rezultat"/>
+
+            <EditText
+                android:id="@+id/civiticoStanari"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_column="1"
+                app:layout_row="6" />
+
+            <EditText
+                android:id="@+id/civiticoDani"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                app:layout_column="2"
+                app:layout_row="6" />
+
+            <TextView
+                android:id="@+id/civiticoUkupno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 kn"
+                app:layout_column="3"
+                app:layout_row="6"
+                style="@style/Rezultat"/>
+
+            <EditText
+                android:id="@+id/zidaricStanari"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_column="1"
+                app:layout_row="7" />
+
+            <EditText
+                android:id="@+id/zidaricDani"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                app:layout_column="2"
+                app:layout_row="7" />
+
+            <TextView
+                android:id="@+id/zidaricUkupno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 kn"
+                app:layout_column="3"
+                app:layout_row="7"
+                style="@style/Rezultat"/>
+
+            <EditText
+                android:id="@+id/crnkovicStanari"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_column="1"
+                app:layout_row="8" />
+
+            <EditText
+                android:id="@+id/crnkovicDani"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                app:layout_column="2"
+                app:layout_row="8" />
+
+            <TextView
+                android:id="@+id/crnkovicUkupno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 kn"
+                app:layout_column="3"
+                app:layout_row="8"
+                style="@style/Rezultat"/>
+
+            <EditText
+                android:id="@+id/glavasStanari"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_column="1"
+                app:layout_row="9" />
+
+            <EditText
+                android:id="@+id/glavasDani"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                app:layout_column="2"
+                app:layout_row="9" />
+
+            <TextView
+                android:id="@+id/glavasUkupno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 kn"
+                app:layout_column="3"
+                app:layout_row="9"
+                style="@style/Rezultat"/>
+
+            <EditText
+                android:id="@+id/dzaferovicStanari"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_column="1"
+                app:layout_row="10" />
+
+            <EditText
+                android:id="@+id/dzaferovicDani"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                app:layout_column="2"
+                app:layout_row="10" />
+
+            <TextView
+                android:id="@+id/dzaferovicUkupno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 kn"
+                app:layout_column="3"
+                app:layout_row="10"
+                style="@style/Rezultat"/>
+
+            <EditText
+                android:id="@+id/markovskiStanari"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_column="1"
+                app:layout_row="11" />
+
+            <EditText
+                android:id="@+id/markovskiDani"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                app:layout_column="2"
+                app:layout_row="11" />
+
+            <TextView
+                android:id="@+id/markovskiUkupno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 kn"
+                app:layout_column="3"
+                app:layout_row="11"
+                style="@style/Rezultat"/>
+
+            <EditText
+                android:id="@+id/triskaStanari"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_column="1"
+                app:layout_row="12" />
+
+            <EditText
+                android:id="@+id/triskaDani"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                app:layout_column="2"
+                app:layout_row="12" />
+
+            <TextView
+                android:id="@+id/triskaUkupno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 kn"
+                app:layout_column="3"
+                app:layout_row="12"
+                style="@style/Rezultat"/>
+
+            <Button
+                android:id="@+id/dugmeIzracunaj"
+                android:layout_width="169dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/izra_unaj"
+                app:layout_column="1"
+                app:layout_columnSpan="2"
+                app:layout_gravity="fill_horizontal"
+                app:layout_row="13" />
+
+            <Button
+                android:id="@+id/dugmeLista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/popis_namirnica"
+                app:layout_column="0"
+                app:layout_columnSpan="4"
+                app:layout_gravity="fill_horizontal"
+                app:layout_row="14" />
+
+
+        </androidx.gridlayout.widget.GridLayout>
+    </ScrollView>
+
+
+</LinearLayout>

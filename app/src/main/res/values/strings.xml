@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Mamina Aplikacija</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="struja">Struja</string>
+    <string name="voda">Voda</string>
+    <string name="broj_stanara">Broj stanara</string>
+    <string name="broj_dana">Broj dana</string>
+    <string name="ukupno_za_platiti">Ukupno za platiti</string>
+    <string name="badnjevi">Badnjević</string>
+    <string name="ivanovi">Ivanović</string>
+    <string name="to_i">Tošić</string>
+    <string name="radeti">Radetić</string>
+    <string name="civitico">Civitico</string>
+    <string name="zidari">Zidarić</string>
+    <string name="crnkovi">Crnković</string>
+    <string name="glava">Glavaš</string>
+    <string name="d_aferovi">Džaferović</string>
+    <string name="markovski">Markovski</string>
+    <string name="triska">Triska</string>
+    <string name="izra_unaj">Izračunaj</string>
+    <string name="popis_namirnica">Popis namirnica</string>
+    <string name="unesi_proizvod">Unesi proizvod</string>
+    <string name="unesi_proizvodx">Unesi proizvod:</string>
+    <string name="obri_i_sve_proizvode">Obriši sve proizvode</string>
+    <string name="nazovi_najboljeg_sina">Tehnička podrška (Najbolji sin!)</string>
+    <string name="pokreni_pauziraj_glazbu">Pokreni/pauziraj glazbu</string>
+
+</resources>

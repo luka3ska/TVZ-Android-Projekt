@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_show_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".notifikacije.ShowMessage">
+
+    <TextView
+        android:text="Od:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/tvOd"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPoruka"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/textView3"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:text="Poruka:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignBaseline="@+id/tvPoruka"
+        android:layout_alignBottom="@+id/tvPoruka"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
